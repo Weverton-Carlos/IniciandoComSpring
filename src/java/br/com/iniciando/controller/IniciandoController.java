@@ -30,13 +30,11 @@ public class IniciandoController {
         
         try {
             dao.adicionar(cadastro);
-            model.addAttribute("retorno",cadastro.getNome());
+//            model.addAttribute("retorno",cadastro.getNome());
         } catch (Exception e) {
 
         }
-
-        return "index";
-
+        return "exibir";
     }
     
     
